@@ -1,7 +1,7 @@
 # pj-data-analysis
 SeSAC LLM DA pjt 1st
 
-# 브라질 이커머스 데이터 분석 보고서 (3개 과제)
+# 브라질 이커머스 데이터 분석 보고서
 
 ## 과제 1) 고객 세분화 & RFM 분석
 
@@ -55,23 +55,3 @@ SeSAC LLM DA pjt 1st
 - 성수기 사전 발주
 - 전진배치 가능 시 ROP 하향
 - 비수기엔 ROP 축소 및 재고 소진 전략 적용
-
----
-
-# 전체 코드 (Python)
-
-## 0) 공통 설정
-
-```python
-import os, math, warnings
-warnings.filterwarnings("ignore")
-
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-
-DATA_DIR = "./"
-
-def read_csv(name):
-    return pd.read_csv(os.path.join(DATA_DIR, name))
-
